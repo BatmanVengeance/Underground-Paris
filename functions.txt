@@ -1,0 +1,18 @@
+<?php
+/**
+ * Enqueue theme styles and scripts.
+ */
+function underground_paris_child_enqueue_styles() {
+    wp_enqueue_style('astra-style', get_template_directory_uri() . '/style.css');
+    wp_enqueue_style('underground-paris-child-style', get_stylesheet_directory_uri() . '/style.css', array('astra-style'), '1.0.0');
+    wp_enqueue_script('custom-js', get_stylesheet_directory_uri() . '/assets/js/custom.js', array('jquery'), '1.0.0', true);
+}
+add_action('wp_enqueue_scripts', 'underground_paris_child_enqueue_styles');
+
+/**
+ * Load child theme textdomain.
+ */
+function underground_paris_child_setup() {
+    load_child_theme_textdomain('underground-paris-child', get_stylesheet_directory() . '/languages');
+}
+add_action('after_setup_theme', 'underground_paris_child_setup');

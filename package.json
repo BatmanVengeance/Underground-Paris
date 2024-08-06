@@ -1,0 +1,23 @@
+{
+  "name": "underground-paris-theme",
+  "version": "1.0.21",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "release": "standard-version"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AneesGeek/underground-paris-theme.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AneesGeek/underground-paris-theme/issues"
+  },
+  "homepage": "https://github.com/AneesGeek/underground-paris-theme#readme",
+  "devDependencies": {
+    "standard-version": "^9.5.0"
+  }
+}

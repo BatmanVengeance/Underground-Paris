@@ -1,0 +1,22 @@
+/*
+Theme Name: Underground Paris Child
+Theme URI: http://example.com/underground-paris-child
+Description: A child theme for the Astra theme.
+Author: Mohammed Anees
+Author URI: http://example.com
+Template: astra
+Version: 1.0.0
+Text Domain: underground-paris-child
+*/
+
+/* Import parent theme styles */
+@import url("../astra/style.css");
+
+/* Custom styles for Underground Paris */
+body {
+    background-color: #f4f4f4;
+}
+.header-custom {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
